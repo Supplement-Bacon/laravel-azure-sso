@@ -5,7 +5,7 @@ namespace SupplementBacon\AzureSSO;
 use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Support\ServiceProvider;
 
-class InseeServiceProvider extends ServiceProvider
+class AzureSSOServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
