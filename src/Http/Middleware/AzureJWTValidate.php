@@ -31,7 +31,7 @@ class AzureJWTValidate
     public $defaultEndPointVersion = '2.0';
 
     /** @var string Azure AD B2C App Client ID */
-    private $clientId;
+    protected $clientId;
 
     /** @var ?PublicKey $publicKey Public key containing the kid, modulus, exponent etc. */
     private $publicKey;
