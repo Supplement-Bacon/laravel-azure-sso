@@ -1,6 +1,6 @@
 <?php
 
-namespace SupplementBacon\AzureSSO;
+namespace SupplementBacon\AzureSSO\Http\Middleware;
 
 use Closure;
 use Exception;
