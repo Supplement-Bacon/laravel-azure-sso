@@ -58,7 +58,7 @@ class AzureJWTValidate
      */
     public function handle(Request $request, Closure $next)
     {
-        $authorizationHeader = $request->header($header);
+        $authorizationHeader = $request->header(self::$header);
         $accessToken = \trim((string) \preg_replace('/^\s*Bearer\s/', '', $authorizationHeader));
 
         if (!$accessToken) {
