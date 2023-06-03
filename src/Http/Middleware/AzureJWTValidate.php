@@ -20,6 +20,9 @@ use Symfony\Component\HttpFoundation\Response;
 class AzureJWTValidate
 {
     private const PUBLIC_KEY_CACHE_PATH = 'azure-cache/public-key';
+    
+    /** @var string|null */
+    public static $header = 'Authorization';
 
     /** @var array Open ID Connect metadata document */
     protected $openIdConfiguration;
@@ -55,7 +58,7 @@ class AzureJWTValidate
      */
     public function handle(Request $request, Closure $next)
     {
-        $authorizationHeader = $request->header('Authorization');
+        $authorizationHeader = $request->header($header);
         $accessToken = \trim((string) \preg_replace('/^\s*Bearer\s/', '', $authorizationHeader));
 
         if (!$accessToken) {
