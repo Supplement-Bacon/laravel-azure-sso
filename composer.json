@@ -1,42 +1,42 @@
 {
-    "name": "supplement-bacon/laravel-azure-sso",
-    "type": "library",
-    "description": "Azure SSO middleware",
-    "version": "1.0.0",
-    "time": "2023-06-03",
-    "keywords": [
-        "laravel",
-        "azure",
-        "sso",
-        "middleware"
-    ],
-    "homepage": "https://github.com/supplement-bacon/laravel-azure-sso",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Samuel Hassid",
-            "email": "samuel@supplement-bacon.com",
-            "homepage": "https://supplement-bacon.com"
-        }
-    ],
-    "require": {
-        "php": "^8.2 | ^8.4",
-        "firebase/php-jwt": "^6.10",
-        "phpseclib/phpseclib": "^3.0",
-        "illuminate/contracts": "^11.0 | ^12.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "SupplementBacon\\AzureSSO\\": "src"
-        }
-    },
-    "minimum-stability": "stable",
-    "extra": {
-        "laravel": {
-            "providers": [
-                "SupplementBacon\\AzureSSO\\AzureSSOServiceProvider"
-            ],
-            "aliases": {}
-        }
+  "name": "supplement-bacon/laravel-azure-sso",
+  "type": "library",
+  "description": "Azure SSO middleware",
+  "version": "1.0.0",
+  "time": "2023-06-03",
+  "keywords": [
+    "laravel",
+    "azure",
+    "sso",
+    "middleware"
+  ],
+  "homepage": "https://github.com/supplement-bacon/laravel-azure-sso",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Samuel Hassid",
+      "email": "samuel@supplement-bacon.com",
+      "homepage": "https://supplement-bacon.com"
     }
+  ],
+  "require": {
+    "php": "^8.2 | ^8.3 | ^8.4",
+    "firebase/php-jwt": "^6.10",
+    "phpseclib/phpseclib": "^3.0",
+    "illuminate/contracts": "^11.0 | ^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SupplementBacon\\AzureSSO\\": "src"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SupplementBacon\\AzureSSO\\AzureSSOServiceProvider"
+      ],
+      "aliases": {}
+    }
+  }
 }
